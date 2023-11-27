@@ -105,10 +105,7 @@ int deletar()
 		printf("O usuário foi deletado com sucesso e(ou) não se encontra no sistema!.\n");
 		system("pause");
 	}
-	
 }
-
-
 
 int main () // int main é a função principal, é o o núcleo do projeto
 			// () é um conjunto de instruções
@@ -132,7 +129,8 @@ int main () // int main é a função principal, é o o núcleo do projeto
 		//tudo que esta entre aspas "" é texto
 		printf("\t2 - Consultar nomes\n"); // ponto e vírgula( ; ) é necessário para reconecer um comando
 		printf("\t3 - Deletar nomes\n"); // \t da um espaço antes do texto
-		printf("\nOpção: "); //fim do menu
+		printf("\t4 - Sair do sistema\n\n");
+		printf("Opção: "); //fim do menu
 	
 		scanf("%d", &opcao); //armazenando a escolha do usuário
 	
@@ -150,6 +148,11 @@ int main () // int main é a função principal, é o o núcleo do projeto
 			
 			case 3:
 			deletar();
+			break;
+			
+			case 4:
+			printf("\n\nObrigado por utilizar o sistema!\n");
+			return 0;
 			break;
 			
 			
